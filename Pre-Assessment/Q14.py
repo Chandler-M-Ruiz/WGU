@@ -14,3 +14,15 @@
 # then the expected output is
 # 6
 # False
+import math
+
+
+factorial_value = math.factorial(int(input()))
+Boolean_value = False
+
+if factorial_value > 100:
+    Boolean_value = True
+
+
+print(factorial_value)
+print(Boolean_value)

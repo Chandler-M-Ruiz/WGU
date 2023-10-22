@@ -14,3 +14,18 @@
 # then the expected output is
 # {d:400,e:500,f:600}
 # {celery:2.81,milk:4.34,bread:5.63}
+
+#I'll be honest, this is the question I struggle with most and don't even know where to begin beyond importing the files. Which is easy.
+import csv
+
+file_path = str(input())
+dictionary1 = {}
+dictionary2 = {}
+
+with open(file_path,'r') as csv_file:
+    csv_reader = csv.reader(csv_file)
+
+#I understand that I can iterate through the item in the csv, and add them a singled dictionary, but I don't understand how to seperate them into TWO list?!
+    for line in csv_reader:
+        dictionary1[line[0]]=str(line[1])
+print(dictionary1)

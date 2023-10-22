@@ -18,3 +18,12 @@
 # then the expected output is
 # Trapezoid area: 28.0 square meters
 
+
+# A = [(b1 + b2) / 2] * h
+b1 = float(input())
+b2 = float(input())
+h = float(input())
+
+area_value = float(((b1 + b2) / 2) * h)
+
+print(f"Trapezoid area: {area_value} square meters")

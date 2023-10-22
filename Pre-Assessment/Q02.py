@@ -11,3 +11,17 @@
 # Tons: 1
 # Pounds: 2
 # Ounces: 3
+
+
+ounces = int(input())
+extra_ounces = float(ounces % 16)
+extra_pounds = float(((ounces / 16) % 2000) - ((ounces / 16) % 1))
+tons = float(((ounces / 16) / 2000) - (((ounces / 16) / 2000) % 1))
+
+value_1 = tons
+value_2 = extra_pounds
+value_3 = extra_ounces
+
+print(f"Tons: {value_1}")
+print(f"Pounds: {value_2}")
+print(f"Ounces: {value_3}")

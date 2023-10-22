@@ -7,3 +7,12 @@
 # 8
 # then the expected output is
 # 8 is 40 in human years
+
+#Can't do this one outside of the lab properly. But I'm pretty sure this is right.
+import pigAge
+
+input_pig_age = int(input())
+converted_pig_age = pigAge.pigAge_converter(input_pig_age)
+
+
+print(f"{input_pig_age} is {converted_pig_age} in human years")
